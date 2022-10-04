@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="./assets/images/favicon_TGDD.ico" rel="shortcut icon" type="image/x-icon" />
+    <title>Điện thoại Nokia</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class = "container">
+                <ul>
+                    <li><a href="./index.html">Trang chủ<i class="fas fa-home"></i></a></li>
+                    <li id = "adress-form"><a href="#">Thành phố Hồ Chí Minh<i class="fas fa-caret-down"></i></a></li>
+                    <li><input type="text" placeholder="Bạn tìm gì..."><i class="fas fa-search"></i></li>
+                    <li><a href=""></a><button><i class="fas fa-shopping-cart"></i>Giỏ hàng</button></li>
+                    <li><a href="">Lịch sử đơn hàng </a></li>
+                    <li id = "login-form"><a href="#">Đăng nhập</a></li>
+                    <li id = "register-form"><a href="#">Đăng kí</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                    <div class="adress-form">
+                        <div class="adress-form-content">
+                            <h2>Chọn địa chỉ nhận hàng <span id = "adress-close">X Đóng</span>
+                            </h2>
+                            <form action="">
+                                <p>Chọn đầy đủ địa chỉ nhận hàng để biết chính xác thời gian giao</p>
+                                <select name="" >
+                                    <option value="#">--Chọn địa điểm</option>
+                                    <option value="#">Hà Nội</option>
+                                    <option value="#">Tp.Hồ Chí Minh</option>
+                                    <option value="#">An Giang</option>
+                                    <option value="#">Bà Rịa Vũng Tàu</option>
+                                    <option value="#">Bạc Liêu</option>
+                                    <option value="#">Bắc Giang</option>
+                                    <option value="#">Bắc Kạn</option>
+                                    <option value="#">Bắc Ninh</option>
+                                    <option value="#">Bến Tre</option>
+                                    <option value="#">Bình Dương</option>
+                                    <option value="#">Bình Định</option>
+                                    <option value="#">Bình Phước</option>
+                                    <option value="#">Bình Thuận</option>
+                                    <option value="#">Cà Mau</option>
+                                    <option value="#">Cao Bằng</option>
+                                    <option value="#">Cần Thơ</option>
+                                    <option value="#">Đà Nẵng</option>
+                                    <option value="#">Đắk Lắk</option>
+                                    <option value="#">Đắk Nông</option>
+                                    <option value="#">Điện Biên</option>
+                                    <option value="#">Đồng Nai</option>
+                                    <option value="#">Đồng Tháp</option>
+                                    <option value="#">Gia Lai</option>
+                                    <option value="#">Hà Giang</option>
+                                    <option value="#">Hà Nam</option>
+                                    <option value="#">Hà Tĩnh</option>
+                                    <option value="#">Hải Dương</option>
+                                    <option value="#">Hải Phòng</option>
+                                    <option value="#">Hậu Giang</option>
+                                    <option value="#">Hòa Bình</option>
+                                    <option value="#">Hưng Yên</option>
+                                    <option value="#">Khánh Hòa</option>
+                                    <option value="#">Kiên Giang</option>
+                                    <option value="#">Kon Tum</option>
+                                    <option value="#">Lai Châu</option>
+                                    <option value="#">Lạng Sơn</option>
+                                    <option value="#">Lào Cai</option>
+                                    <option value="#">Lâm Đồng</option>
+                                    <option value="#">Long An</option>
+                                    <option value="#">Nam Định</option>
+                                    <option value="#">Nghệ An</option>
+                                    <option value="#">Ninh Bình</option>
+                                    <option value="#">Ninh Thuận</option>
+                                    <option value="#">Phú Thọ</option>
+                                    <option value="#">Phú Yên</option>
+                                    <option value="#">Quảng Bình</option>
+                                    <option value="#">Quảng Nam</option>
+                                    <option value="#">Quảng Ngãi</option>
+                                    <option value="#">Quảng Ninh</option>
+                                    <option value="#">Quảng Trị</option>
+                                    <option value="#">Sóc Trăng</option>
+                                    <option value="#">Sơn La</option>
+                                    <option value="#">Tây Ninh</option>
+                                    <option value="#">Thái Bình</option>
+                                    <option value="#">Thái Nguyên</option>
+                                    <option value="#">Thanh Hóa</option>
+                                    <option value="#">Thừa Thiên Huế</option>
+                                    <option value="#">Tiền Giang</option>
+                                    <option value="#">Trà Vinh</option>
+                                    <option value="#">Tuyên Quang</option>
+                                    <option value="#">Vĩnh Long</option>
+                                    <option value="#">Vĩnh Phúc</option>
+                                    <option value="#">Yên Bái</option>
+                                </select>
+                                <input type="text" placeholder="Quận/Huyện/Thị xã/Thành phố">
+                                <input type="text" placeholder="Xã/Phường/Thị trấn">
+                                <input type="text" placeholder="Số nhà, tên đường">
+                                <button>Xác nhận</button>
+                            </form>
+                        </div>
+                    </div>
+    
+                    <!---------login-form---------------->
+                    <div class="login-form">
+                        <div class="login-form-content">
+                            <h2>Đăng Nhập <span id = "login-close">X Đóng</span>
+                            </h2>
+                            <div>
+                                <input type="text" placeholder="Tên đăng nhập hoặc số điện thoại" id="username"/>
+                            </div>
+                            <div>
+                                <input type="password" placeholder="Mật khẩu" id = "password"/>
+                            </div>
+                            <input type="checkbox" >Duy trì đăng nhập
+                            <input type="checkbox" >Lưu mật khẩu
+                            <div>
+                                <button>Đăng nhập</button>
+                            </div> 
+                        </div>
+                    </div>
+                    <!---------register-form---------------->
+                    <div class="register-form">
+                        <div class="register-form-content">
+                            <h2>Đăng kí <span id = "register-close">X Đóng</span>
+                            </h2>
+                            <div>
+                                <input type="text" placeholder="Tên đăng nhập" id="username"/>
+                            </div>
+                            <div>
+                                <input type="password" placeholder="Mật khẩu" id = "password"/>
+                            </div>
+                            <div>
+                                <input type="password" placeholder="Nhập lại mật khẩu" id = "password"/>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Nhập số điện thoại" id="username"/>
+                            </div>
+                            <div>
+                                Ngày/tháng/năm sinh:<input type="date" id="username"/>
+                            </div>
+                            <div>
+                                <button>Đăng kí</button>
+                            </div>  
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <section class="menu-bar">
+            <div class="container">
+                <div class="menu-bar-content">
+                    <ul>
+                        <li><a href="./iphone.html">Iphone<i class="fas fa-caret-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="">Iphone 13</a></li>
+                                    <li><a href="">Iphone 12</a></li>
+                                    <li><a href="">Iphone 11</a></li>
+                                    <li><a href="">Iphone X</a></li>
+                                    <li><a href="">Iphone 8</a></li>
+                                    <li><a href="">Iphone 7</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./samsung.html"><i class="fal fa-mobile"></i>SamSung<i class="fas fa-caret-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="">SamSung Galaxy Z</a></li>
+                                    <li><a href="">SamSung Galaxy S</a></li>
+                                    <li><a href="">SamSung Galaxy Note</a></li>
+                                    <li><a href="">SamSung Galaxy A</a></li>
+                                    <li><a href="">SamSung Galaxy M</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./vivo.html"><i class="fal fa-mobile"></i>Vivo<i class="fas fa-caret-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="">Vivo version X</a></li>
+                                    <li><a href="">Vivo version V</a></li>
+                                    <li><a href="">Vivo version Y</a></li>
+                                    <li><a href="">Vivo version U</a></li>
+                                    <li><a href="">Vivo version S</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./nokia.html"><i class="fal fa-mobile"></i>Nokia <i class="fas fa-caret-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="">Nokia G</a></li>
+                                    <li><a href="">Nokia Plus</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./oppo.html"><i class="fal fa-mobile"></i>Oppo <i class="fas fa-caret-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="">Oppo Reno6</a></li>
+                                    <li><a href="">Oppo Reno5</a></li>
+                                    <li><a href="">Oppo Find X</a></li>
+                                    <li><a href="">Oppo A Series</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./xiaomi.html"><i class="fal fa-mobile"></i>Xiaomi <i class="fas fa-caret-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="">Xiaomi </a></li>
+                                    <li><a href="">Redmi</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./phukien.html"><i class="fad fa-headphones"></i>Phụ kiện <i class="fas fa-caret-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="">Củ sạc, cáp</a></li>
+                                    <li><a href="">Ốp lưng điện thoại</a></li>
+                                    <li><a href="">Miếng dán màn hình</a></li>
+                                    <li><a href="">Sạc dự phòng</a></li>
+                                    <li><a href="">Phụ kiện Ipad</a></li>
+                                    <li><a href="">Thẻ nhớ, USB</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>  
+    </header>
+    <section>
+        <div class="container">
+            <div class ="content">
+                <div class ="content-left">
+                    <div class="content-left-top-container">
+                        <div class="content-left-top">
+                            <a href="./phukien.html"><img src="https://cdn.tgdd.vn/2021/12/banner/830-300-830x300-26.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class ="content-right">
+                    <li><a href="./samsung.html"><img src="https://cdn.tgdd.vn/2021/12/banner/laptopdesk(5)-340x340.jpg" alt=""></a></li>
+                    <li><a href="./oppo.html"><img src="https://cdn.tgdd.vn/2021/11/banner/laptopdesk(3)-340x340.jpg" alt=""></a></li>
+                    <li><a href="./xiaomi.html"><img src="https://cdn.tgdd.vn/2021/06/banner/3-340x340.jpg" alt=""></a></li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class = "slider-product-one">
+        <div class="container">
+
+            <!-- ~~~~~~~~~~~~~~~~~~~ Product~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="total">
+                <span>9 điện thoại Nokia</span>
+            </div>
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col">
+                        <div class="slider-product-one-content-item test">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/270207/nokia-g21-xanh-thumb-600x600.jpg" alt="">
+                            <div class="slider-product-one-content-item-text">
+                                <li>Nokia G21</li>
+                                <li style="font-weight: 600;">3.890.000<sup>đ</sup></li>                           
+                                    <li>- RAM 8 GB, ROM 128 GB</li>
+                                    <li>- Camera sau: Chính 64 MP & Phụ 8 MP, 2 MP</li>
+                                    <li>- Camera trước: 32 MP</li>
+                                    <li>- Pin 5000 mAh, Sạc 80 W</li>              
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="slider-product-one-content-item test">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/272148/TimerThumb/nokia-g11-(2).jpg" alt="">
+                            <div class="slider-product-one-content-item-text">
+                                <li>Nokia G11</li>
+                                <li style="font-weight: 600;">3.240.000<sup>đ</sup></li>                           
+                                    <li>- RAM 8 GB, ROM 128 GB</li>
+                                    <li>- Camera sau: Chính 64 MP & Phụ 8 MP, 2 MP</li>
+                                    <li>- Camera trước: 32 MP</li>
+                                    <li>- Pin 5000 mAh, Sạc 80 W</li>              
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="slider-product-one-content-item test">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/235995/Nokia%20g10%20xanh%20duong-600x600.jpg" alt="">
+                            <div class="slider-product-one-content-item-text">
+                                <li>Nokia G10</li>
+                                <li style="font-weight: 600;">3.190.000<sup>đ</sup></li>                           
+                                    <li>- RAM 8 GB, ROM 128 GB</li>
+                                    <li>- Camera sau: Chính 64 MP & Phụ 8 MP, 2 MP</li>
+                                    <li>- Camera trước: 32 MP</li>
+                                    <li>- Pin 5000 mAh, Sạc 80 W</li>              
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="slider-product-one-content-item test">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/274084/TimerThumb/nokia-c21-plus.jpg" alt="">
+                            <div class="slider-product-one-content-item-text">
+                                <li>Nokia C21 Plus</li>
+                                <li style="font-weight: 600;">2.890.000<sup>đ</sup></li>                           
+                                    <li>- RAM 8 GB, ROM 128 GB</li>
+                                    <li>- Camera sau: Chính 64 MP & Phụ 8 MP, 2 MP</li>
+                                    <li>- Camera trước: 32 MP</li>
+                                    <li>- Pin 5000 mAh, Sạc 80 W</li>              
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="slider-product-one-content-item test">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/239748/nokia-c30-xanh-la-600x600.jpg" alt="">
+                            <div class="slider-product-one-content-item-text">
+                                <li>Nokia C30</li>
+                                <li style="font-weight: 600;">2.850.000<sup>đ</sup></li>                           
+                                    <li>- RAM 8 GB, ROM 128 GB</li>
+                                    <li>- Camera sau: Chính 64 MP & Phụ 8 MP, 2 MP</li>
+                                    <li>- Camera trước: 32 MP</li>
+                                    <li>- Pin 5000 mAh, Sạc 80 W</li>              
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="slider-product-one-content-item test">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/236437/nokia-c20-vang-1-600x600.jpg" alt="">
+                            <div class="slider-product-one-content-item-text">
+                                <li>Nokia C20</li>
+                                <li style="font-weight: 600;">1.990.000<sup>đ</sup></li>                           
+                                    <li>- RAM 8 GB, ROM 128 GB</li>
+                                    <li>- Camera sau: Chính 64 MP & Phụ 8 MP, 2 MP</li>
+                                    <li>- Camera trước: 32 MP</li>
+                                    <li>- Pin 5000 mAh, Sạc 80 W</li>              
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="slider-product-one-content-item test">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/228366/nokia-215-xanh-ngoc-new-600x600-600x600.jpg" alt="">
+                            <div class="slider-product-one-content-item-text">
+                                <li>Nokia 215 4G</li>
+                                <li style="font-weight: 600;">900.000<sup>đ</sup></li>                           
+                                    <li>- RAM 8 GB, ROM 128 GB</li>
+                                    <li>- Camera sau: Chính 64 MP & Phụ 8 MP, 2 MP</li>
+                                    <li>- Camera trước: 32 MP</li>
+                                    <li>- Pin 5000 mAh, Sạc 80 W</li>              
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="slider-product-one-content-item test">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/240196/nokia-110-4g-yellow-600x600.jpg" alt="">
+                            <div class="slider-product-one-content-item-text">
+                                <li>Nokia 110 4G</li>
+                                <li style="font-weight: 600;">850.000<sup>đ</sup></li>                           
+                                    <li>- RAM 8 GB, ROM 128 GB</li>
+                                    <li>- Camera sau: Chính 64 MP & Phụ 8 MP, 2 MP</li>
+                                    <li>- Camera trước: 32 MP</li>
+                                    <li>- Pin 5000 mAh, Sạc 80 W</li>              
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="slider-product-one-content-item test">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/240194/nokia-105-4g-blue-600x600.jpg" alt="">
+                            <div class="slider-product-one-content-item-text">
+                                <li>Nokia 105 4G</li>
+                                <li style="font-weight: 600;">750.000<sup>đ</sup></li>                           
+                                    <li>- RAM 8 GB, ROM 128 GB</li>
+                                    <li>- Camera sau: Chính 64 MP & Phụ 8 MP, 2 MP</li>
+                                    <li>- Camera trước: 32 MP</li>
+                                    <li>- Pin 5000 mAh, Sạc 80 W</li>              
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Product``````````````````````` -->
+            <div class="slider-product-one-content">
+                <div class="slider-product-one-content-title">
+                    <h2>Sản Phẩm Nổi Bật</h2>
+                </div>
+                <div class="slider-product-one-content-items">
+                    <div class="slider-product-one-content-item">
+                        <img src="https://cdn.tgdd.vn/Products/Images/42/223602/iphone-13-midnight-2-600x600.jpg" alt="">
+                        <div class="slider-product-one-content-item-text">
+                            <li>iPhone 13 128GB</li>
+                            <li>24.490.000<sup>đ</sup></li>
+                            <li>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="slider-product-one-content-item">
+                        <img src="https://cdn.tgdd.vn/Products/Images/42/251879/samsung-galaxy-a52s-5g-mint-600x600.jpg" alt="">
+                        <div class="slider-product-one-content-item-text">
+                            <li>Samsung Galaxy A52s</li>
+                            <li>11.490.000<sup>đ</sup></li>
+                            <li>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                
+                            </li>
+                        </div>
+                    </div>
+                    <div class="slider-product-one-content-item">
+                        <img src="https://cdn.tgdd.vn/Products/Images/42/236187/oppo-reno6-pro-blue-1-600x600.jpg" alt="">
+                        <div class="slider-product-one-content-item-text">
+                            <li>OPPO Reno6 Pro 5G</li>
+                            <li>18.490.000<sup>đ</sup></li>
+                            <li>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                
+                            </li>
+                        </div>
+                    </div>
+                    <div class="slider-product-one-content-item">
+                        <img src="https://cdn.tgdd.vn/Products/Images/42/241049/samsung-galaxy-a03s-black-600x600.jpg" alt="">
+                        <div class="slider-product-one-content-item-text">
+                            <li>Samsung Galaxy A03s</li>
+                            <li>3.390.000<sup>đ</sup></li>
+                            <li>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                
+                            </li>
+                        </div>
+                    </div>
+                    <div class="slider-product-one-content-item">
+                        <img src="https://cdn.tgdd.vn/Products/Images/42/213031/iphone-12-xanh-la-new-2-600x600.jpg" alt="">
+                        <div class="slider-product-one-content-item-text">
+                            <li>iPhone 12 64GB</li>
+                            <li>20.490.000<sup>đ</sup></li>
+                            <li>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="contact">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col contact-item test2">Liên Hệ</div>
+                    <div class="col contact-item"><span>Điện thoại:</span> 0312958394</div>
+                    <div class="col contact-item">Email: Hungtin640@gmail.vn</div>
+                    <div class="col contact-item">Địa chỉ: 736 Nguyễn Trãi, TPHCM</div>
+                </div>
+                <div class="row">
+                    <div class="col contact-item">
+                        Tích điểm quà tặng VIP
+                    </div>
+                    <div class="col contact-item">
+                        Lịch sử mua hàng
+                    </div>
+                    <div class="col contact-item">
+                        Cộng tác bán hàng cùng TGDĐ
+                    </div>
+                    <div class="col contact-item">
+                        Tìm hiểu về mua trả góp
+                    </div>
+                    <div class="col contact-item">
+                        Chính sách bảo hành
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col contact-item">
+                        Giới thiệu công ty (MWG.vn)
+                    </div>
+                    <div class="col contact-item">Tuyển dụng</div>
+                    <div class="col contact-item">Gửi góp ý, khiếu nại</div>
+                    <div class="col contact-item">Tìm siêu thị (3.225 shop)</div>
+                    <div class="facebook">
+                        <i class="fa fa-facebook-square"></i>
+                        <i class="fa fa-youtube-play"></i>
+                    </div>
+                </div>                
+            </div>
+        </div>
+        <div class="coppyright">
+            <span>© 2018. Công ty cổ phần Thế Giới Di Động. Lê Hùng Tín</span>
+        </div>
+    </footer>
+    <script src="./assets/script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,544 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+header{
+    background-color: #BF0300;
+    text-align: center;
+    height: 44px;
+}
+nav{
+    background-color: black;
+    height: 35px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li,a{
+    color: white;
+    font-size: 14px;
+}
+nav ul li:nth-child(1) i{
+    color: #FED100;
+    font-size: 15px;
+    margin-left: 6px;
+}
+nav ul li:nth-child(1):hover a{
+    color: #FED100;
+   }
+nav ul li:nth-child(2) i{
+    color: #FED100;
+    font-size: 15px;
+    margin-left: 6px;
+}
+nav ul li:nth-child(3){
+    position: relative;
+}
+nav ul li:nth-child(3) input{
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding-left: 6px;
+}
+nav ul li:nth-child(3) i {
+    position: absolute;
+    font-size: 20px;
+    right: 12px;
+    color: black;
+    line-height: 30px;
+    cursor: pointer;
+}
+nav ul li:nth-child(4) button {
+    height: 30px;
+    padding: 12px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(70, 68, 68);
+    border-radius: 5px;
+}
+nav ul li:nth-child(4) button i {
+    margin-right: 6px;
+}
+nav ul li:nth-child(4) button:hover{
+    background-color: rgb(95, 93, 93);
+}
+
+nav ul li:nth-child(5):hover a{
+color: #FED100;
+}
+nav ul li:nth-child(6):hover a{
+color: #FED100;
+}
+nav ul li:nth-child(7):hover a{
+color: #FED100;
+}
+
+.menu-bar{
+    background-color: #FED100;
+    
+}
+.menu-bar ul{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-bar ul li a{
+    color: black;
+    font-size: 16px;
+}
+.menu-bar ul li a i
+{
+    margin-right: 6px;
+    font-size: 16px;
+}
+.menu-bar ul li {
+    padding: 12px 6px ;
+    transition: all 0.3s ease;
+}
+.menu-bar ul li:hover{
+    background-color: white;
+}
+/*--------address form------*/
+.adress-form{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    display: none;
+    z-index: 1;
+}
+.adress-form-content{
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    border-radius: 5px;
+}
+.adress-form-content form p{
+    font-size: 16px;
+}
+.adress-form-content form{
+    padding: 12px 40px;
+}
+.adress-form-content h2{
+    font-size: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.adress-form-content h2 span{
+    display: block;
+    position: absolute;
+    height: 30px;
+    padding: 0 6px;
+    border: 1px solid #ddd;
+    right: 12px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 30px;
+    color: #333;
+    border-radius: 5px;
+}
+.adress-form-content form input,select {
+    height: 45px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 6px;
+    border-radius: 5px;
+}
+.adress-form-content form button{
+    margin-top: 20px;
+    height: 40px;
+    width: 80%;
+    cursor: pointer;
+    background-color: #f97e0e;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+/*--------submenu--------------*/
+.menu-bar-content ul li {
+    position: relative;
+}
+.submenu{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    left: 0;
+    top: 100%;
+    padding: 12px;
+    display: none;
+    background-color: white;
+    z-index: 10;
+}
+.submenu ul{
+    display: flex;
+    flex-direction: column;
+    
+}
+.submenu ul li{
+    padding: 6px 0;
+}
+
+.submenu ul li:hover a{
+    color: #3262bd;
+}
+.submenu ul li:hover{
+    background: none;
+}
+.menu-bar-content ul li:hover .submenu{
+    display: block;
+}
+/*---------slider---------*/
+li{
+    list-style: none;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.content-left{
+    width: 65%;
+}
+.content-left-top{
+    width: 100%;
+    height:300px;
+    position: relative;
+}
+.content-left-top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content-right{
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    justify-content: space-around;
+}
+.content-right li{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    margin-bottom: 3px;
+}
+.content-right li img{
+    height: 170px;
+    width: 170px;
+}
+
+.content-left-top img{
+    position: absolute;
+}
+.content-left-top-container {
+    position: relative;
+    overflow: hidden;
+}
+.content-left-top-container:hover i{
+    opacity: 1;
+}
+.content-left-top{
+    transition: all 0.5s ease;
+}
+/*---------------login-form------------------*/
+.login-form{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    display: none;
+    z-index: 1;
+    text-align: center;
+}
+.login-form-content{
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    border-radius: 5px;
+}
+.login-form-content h2{
+    font-size: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.login-form-content h2 span{
+    display: block;
+    position: absolute;
+    height: 30px;
+    padding: 0 6px;
+    border: 1px solid #ddd;
+    right: 12px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 30px;
+    color: #333;
+    border-radius: 5px;
+}
+.login-form-content div input{
+    width: 250px;
+    height: 45px;
+    border: 1px solid #FED100;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.login-form-content div button{
+    margin-top: 20px;
+    height: 40px;
+    width: 80%;
+    cursor: pointer;
+    background-color: #FED100;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+.login-form-content input{
+    width: 30px;
+    margin-top: 20px;
+}
+/*---------------register-form------------------*/
+.register-form{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    display: none;
+    z-index: 1;
+    text-align: center;
+}
+.register-form-content{
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    border-radius: 5px;
+}
+.register-form-content h2{
+    font-size: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.register-form-content h2 span{
+    display: block;
+    position: absolute;
+    height: 30px;
+    padding: 0 6px;
+    border: 1px solid #ddd;
+    right: 12px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 30px;
+    color: #333;
+    border-radius: 5px;
+}
+.register-form-content div input{
+    width: 250px;
+    height: 45px;
+    border: 1px solid #FED100;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.register-form-content div button{
+    margin-top: 20px;
+    height: 40px;
+    width: 80%;
+    cursor: pointer;
+    background-color: #FED100;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+.register-form-content input{
+    width: 30px;
+    margin-top: 20px;
+}
+/*--------------------slider-product----------*/
+.slider-product-one-content{
+    background-color: #FED100;
+    padding: 12px 12px 24px 12px;
+    margin-top: 50px;
+}
+.slider-product-one-content-items{
+    display: flex;
+    justify-content: space-evenly;
+}
+.slider-product-one-content-item{
+    width: 19%;
+    background-color: #fff;
+    padding: 50px 12px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.slider-product-one-content-item img{
+    width: 100%;
+}
+.slider-product-one-content-item-text{
+    padding-top: 20px;
+}
+.slider-product-one-content-item-text li{
+    margin-bottom: 6px;
+}
+.slider-product-one-content-item-text li:last-child i{
+    color: #fb6e2e;
+}
+.slider-product-one-content-item-text li:nth-child(1):hover{
+    color: #fb6e2e;
+}
+.slider-product-one-content-item:hover img{
+    transform: translateY(-20px);
+    transition: all 0.5s ease;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+.row {
+    width: 1200px;
+}
+
+.col {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.total {
+    display: flex;
+    margin-top: 24px;
+}
+
+.total span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.test {
+    width: 20%;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+}
+
+.test:hover {
+    box-shadow: rgb(0 0 0 / 20%) 0px 4px 16px;
+    z-index: 9999;
+}
+
+.test:hover > .slider-product-one-content-item-text li:first-child {
+    color: #fb6e2e;
+}
+
+.coppyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background-color: #f1f1f1;
+}
+
+.coppyright span {
+    color: #666;
+}
+
+.contact-item {
+    margin-top: 16px;
+    color: #333;
+}
+
+.contact-item:hover {
+    color: #fb6e2e;
+    cursor: pointer;
+}
+
+.contact-item span {
+    margin-right: 8px;
+}
+
+.test2 {
+    font-weight: 600;
+}
+
+.test2:hover {
+    cursor: default;
+    color: #333;
+}
+
+.facebook {
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+}
+
+.facebook i {
+    color:#2f80ed;
+    font-size: 48px;
+}
+
+.facebook i:hover {
+    opacity: .775;
+    cursor: pointer;
+}
+
+.facebook i:nth-child(2) {
+    color: red;
+    font-size: 54px;
+}
+
+footer .contact-item {
+    margin-left: 50px;
+}
